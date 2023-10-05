@@ -1,5 +1,5 @@
 """
-ASGI config for bug project.
+ASGI config for bugapp project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bug.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bugapp.settings')
 
 application = get_asgi_application()
