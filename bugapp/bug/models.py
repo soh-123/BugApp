@@ -21,3 +21,7 @@ class Bug(models.Model):
     bug_type = models.CharField(max_length = 50, choices = BUG_TYPES)
     report_date = models.DateField()
     status = models.CharField(max_length = 50, choices = STATUS)
+
+    
+    def __str__(self):
+        return self.bug_description 
